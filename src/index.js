@@ -23,5 +23,21 @@ const sumR = numbers.reduce(function(accumulator, currentValue) {
 });
 console.log("reduce numbers array to its summation: " + sumR);
 //Find - find the first item that matches from an array.
+function lookFor(x) {
+  if (x > 10) {
+    return x;
+  }
+}
+
+const found = numbers.find(lookFor);
+console.log("Found numbers: " + found);
 
 //FindIndex - find the index of the first item that matches.
+function lookForIndex(x) {
+  if (x > 1) {
+    return x;
+  }
+}
+
+const foundIndex = numbers.findIndex(lookForIndex);
+console.log("Found numbers: " + foundIndex);
